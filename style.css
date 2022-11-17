@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    display: flex;
+    /* height: 80px; */
+    background-color: rgb(74, 158, 253);
+}
+#empty{
+    height: 20px;
+    background-color: lightblue;
+}
+#nav{
+    width: 200px;
+    height: 60px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+#side{
+    display: flex;
+    position: relative;
+    left: 550px;
+    top: 12px;
+    /* justify-content: space-between; */
+}
+.sideitems{
+    width: 120px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0 10px;
+}
+.sideitems:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+#central{
+    background-color: rgb(255,70,229);
+    background: linear-gradient(180deg, pink 0% ,lightpink 20% , lightblue 30% ,rgb(84, 84, 236) 56%, yellow 100%);
+}
+#C{
+    position: relative;
+    top: 20px;
+}
+#C1{
+    position: relative;
+    top: 60px;
+}
+#butt{
+    background-color: blue;
+    color: black;
+    text-align: center;
+    border-radius: 40px;
+    border: 2px solid black;
+    padding: 15px;
+    font-size:medium;
+    width: 140px;
+    position: relative;
+    top: 80px;
+    font-weight: 700;
+    left: 30px;
+}
+#right{
+    position: relative;
+    left: 750px;
+    bottom: 40px;
+}
+.product{
+    width: 150px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px lightgrey;
+}
+.product:hover{
+    box-shadow: 8px 8px lightgrey;
+}
+.app{
+    width: 120px;
+    height: 50px;
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+.app1{
+    width: 130px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    top: 35px;
+}
+.app2{
+    background-color: black ;
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+    border: 2px solid black;
+    padding: 8px;
+    font-size:medium;
+    width: 100px;
+    font-weight: 500;
+    position: relative;
+    top: 35px;
+    left: 25px;
+}
+#copy{
+    text-align: center;
+    background-color: lightgrey;
+    position: relative;
+    top: 20px;
+}
+#bottom{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 10px;
+    background-color: whitesmoke;
+}
+
+
+/* media query part for iphone SE */
+
+@media screen and (max-width:375px){
+    #right{
+        position: relative;
+        left: 0;
+        width: 350px;
+        height: 100px;
+        bottom: 80px;
+    }
+    #C1{
+        position: relative;
+        top: 150px;
+    }
+    #central{
+        height: 450px;
+    }
+    #butt{
+        position: relative;
+        top: 180px;
+    }
+    #bottom{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 100px;
+    }
+    .product{
+        margin: 15px 0;
+    }
+    .product:hover{
+        box-shadow: 8px 8px lightgrey;
+    }
+}
